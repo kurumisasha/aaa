@@ -1,88 +1,70 @@
-/* General Reset */
-body, h1, h2, ul, li, p {
+/* Reset gaya dasar */
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f4f4f4;
     color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    line-height: 1.6;
 }
 
-/* Container Styling */
+/* Gaya untuk container utama */
 .container {
-    background: #ffffff;
-    padding: 20px 30px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-/* Form Styling */
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
+/* Gaya untuk judul */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444;
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-/* Button Styling */
+/* Tombol Generate */
 .btn {
-    background-color: #ff6f00;
-    color: #ffffff;
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
     border: none;
     padding: 10px 20px;
+    font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #e65a00;
+    background-color: #0056b3;
 }
 
-/* Voucher Result Styling */
-#voucher-result {
+/* Hasil voucher */
+#voucherResult {
     margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 5px;
     text-align: left;
 }
 
+/* Elemen tersembunyi */
 .hidden {
     display: none;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-ul li {
-    background: #f1f1f1;
-    margin: 5px 0;
+/* Gaya untuk kode voucher */
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background: #eaeaea;
     padding: 10px;
     border-radius: 5px;
-    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
 }
