@@ -3,23 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generate Orange Voucher</title>
+    <title>Generate Voucher</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Generate Orange Voucher</h1>
-        <form id="voucher-form">
-            <div class="form-group">
-                <label for="card-number">Card Number</label>
-                <input type="text" id="card-number" placeholder="Enter your card number" required>
-            </div>
-            <button type="submit" class="btn">Generate Voucher</button>
-        </form>
+        <h1>Generate Voucher</h1>
+        <button id="generateButton" class="btn">Generate Voucher</button>
 
-        <div id="voucher-result" class="hidden">
-            <h2>Generated Voucher Codes:</h2>
-            <ul id="voucher-codes"></ul>
+        <div id="voucherResult" class="hidden">
+            <h2>Generated Voucher:</h2>
+            <pre id="voucherCode"></pre>
         </div>
     </div>
     <script src="script.js"></script>
